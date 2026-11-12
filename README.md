@@ -73,4 +73,4 @@ The month follows the application's system time zone. If no spending is recorded
 ./mvnw test
 ```
 
-The context-loading test requires the configured PostgreSQL database, SQS queue, and AWS credentials.
+The listener unit tests use a mocked service and a real JSON parser. They run without PostgreSQL, SQS, or AWS credentials.
